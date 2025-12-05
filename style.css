@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -91,6 +92,8 @@ p {
 }
 #home .navbar nav ul a:hover {
   color: var(--light-blue);
+  border-bottom: 1px solid var(--light-blue);
+  padding-bottom: 5px;
 }
 #home .navbar .logo {
   width: 250px;
