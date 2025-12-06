@@ -55,6 +55,7 @@ p {
 }
 .btn-primary:hover {
   background-color: #135fa1;
+  box-shadow: 2px 2px 10px 0px #135fa1;
 }
 .btn-secondary {
   background-color: var(--dark-gray);
@@ -63,6 +64,7 @@ p {
 }
 .btn-secondary:hover {
   background-color: #4c4f6e;
+  box-shadow: 2px 2px 15px 0px #4c4f6e;
 }
 .container {
   max-width: 1200px;
@@ -155,7 +157,8 @@ p {
 }
 /* Home End */
 /* About Start */
-#about {
+#about,
+#help {
   padding: 6rem 0;
 }
 #about .row {
@@ -239,4 +242,37 @@ p {
 }
 #info .row .col p {
   color: #fff;
+}
+/* Help Start */
+#help .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+#help .row .col {
+  position: relative;
+}
+#help .row .col i {
+  font-size: 50px;
+  color: var(--light-blue);
+  transition: 0.3s all ease;
+}
+#help .row .col i:hover {
+  color: var(--dark-gray);
+  border-bottom: 2px solid var(--light-blue);
+  padding-bottom: 10px;
+}
+#help .row .col h3 {
+  margin: 20px 0;
+}
+#help .row .col:first-child::before,
+#help .row .col:nth-child(2)::before {
+  content: "";
+  border-bottom: 4px dotted var(--light-blue);
+  width: 118px;
+  position: absolute;
+  right: -75px;
+  top: 30px;
 }
